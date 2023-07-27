@@ -1,5 +1,7 @@
 
+import 'package:e_commerse_firebase_flutter/views/category_screen/category_screen.dart';
 import 'package:e_commerse_firebase_flutter/views/home_screen/home_screen.dart';
+import 'package:e_commerse_firebase_flutter/views/splash_screen/splash_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -24,8 +26,8 @@ class MyApp extends StatelessWidget {
       title:"apurva",
       theme: ThemeData(),
       // home: Home(),
-      // home: SplashScreen(),
-      home: HomeScreen(),
+      home: CategoryScreen(),
+      // home: Home(),
     );
 
   }

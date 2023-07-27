@@ -11,6 +11,7 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
+
   Widget build(BuildContext context) {
     return  Container(
         padding: EdgeInsets.all(12),
@@ -233,24 +234,34 @@ class HomeScreen extends StatelessWidget {
                         },
 
                       ).box.rounded.clip(Clip.antiAlias).margin(EdgeInsets.symmetric(horizontal: 10)).make(),
-                      14.heightBox,
+                      18.heightBox,
 
 
 
                       //all products
                       GridView.builder(
-                        scrollDirection: Axis.vertical,
+                        physics: ScrollPhysics(),
+                        // scrollDirection: Axis.vertical,
                         shrinkWrap: true,
-                          itemCount: 6,
+                          itemCount: 8,
                           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 2,mainAxisSpacing: 6,crossAxisSpacing: 7
+                          crossAxisCount: 2,mainAxisSpacing: 8,crossAxisSpacing: 8,mainAxisExtent: 280
 
                       ),
 
                           itemBuilder: (context,index) {
-                            return Container(
-                              color: Colors.red,
-                            );
+                            return Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset(imgP1,width: 200,height:200,fit: BoxFit.cover,
+                                ),
+                                Spacer(),
+                                "MSI Laptop 8GB/512gb".text.fontFamily(semibold).size(10).color(Colors.black45).make(),
+                                10.heightBox,
+                                "\$1000".text.size(16).color(Colors.red).fontFamily(bold).make(),
+                              ],
+
+                            ).box.white.roundedSM.margin(EdgeInsets.symmetric(horizontal: 3)).padding(EdgeInsets.all(8)).make();
                           }
                       )
                       
