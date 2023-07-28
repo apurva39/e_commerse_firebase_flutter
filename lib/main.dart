@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
       // title: appname,
       title:"apurva",
       theme: ThemeData(),
-      // home: Home(),
-      home: CategoryScreen(),
+      home: Home(),
+      // home: CategoryScreen(),
       // home: Home(),
     );
 
