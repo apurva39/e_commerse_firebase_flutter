@@ -44,3 +44,12 @@ const categoryImages=[
 
 
 ];
+
+
+const profileButttonIcon=[
+  icOrder,icWallet,icMessages
+];
+
+const profileButtonList=[
+  "My Orders","My Wallet","Messages"
+];
