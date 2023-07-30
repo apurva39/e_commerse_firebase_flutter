@@ -10,6 +10,8 @@ Widget detailsCard({String? count,String? title })
       5.heightBox,
     title!.text.color(darkFontGrey).make(),
     ]
-  ).box.rounded.size(120, 70).white.shadow3xl.make();
+  ).box.rounded.size(100, 70).white.shadow3xl.make();
 }
+
+
 
