@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "790790719283",
+    "project_id": "emart-41508",
+    "storage_bucket": "emart-41508.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790790719283:android:f491f16cd8ae095b02a046",
+        "android_client_info": {
+          "package_name": "com.example.e_commerse_firebase_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790790719283-94rkm5qsh94tagfdqlfvif9u8md44a0h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_commerse_firebase_flutter",
+            "certificate_hash": "5ff26b063ba446e053d4842c835fa018357118cf"
+          }
+        },
+        {
+          "client_id": "790790719283-qll6iv5m08vltora5sh7h9k4vc4ljtaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWIp6ZNP74mX1hEQ2tNcBpvWWFZsnxSNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790790719283-qll6iv5m08vltora5sh7h9k4vc4ljtaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
