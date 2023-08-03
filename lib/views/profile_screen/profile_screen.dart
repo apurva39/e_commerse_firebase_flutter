@@ -1,7 +1,11 @@
+import 'package:e_commerse_firebase_flutter/auth_screen/login_screen.dart';
 import 'package:e_commerse_firebase_flutter/constants/consts.dart';
+import 'package:e_commerse_firebase_flutter/controller/auth_controller.dart';
 import 'package:e_commerse_firebase_flutter/views/profile_screen/details_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../constants/colors.dart';
 import '../../constants/lists.dart';
@@ -46,7 +50,10 @@ class ProfileScreen extends StatelessWidget {
                           color: Colors.red
                         )
                       ),
-                      onPressed: (){},
+                      onPressed: ()async{
+                        await Get.put(AuthController()).signoutMethod(context);
+                        Get.offAll(()=>LoginScreen());
+                      },
                       child: "Log Out".text.fontFamily(semibold).color(darkFontGrey).size(13).make(),
 
         ),

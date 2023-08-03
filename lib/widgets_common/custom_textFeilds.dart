@@ -58,7 +58,7 @@ import 'package:flutter/material.dart';
 
 
 
-Widget customTextFeild({String? title, String? hint, controller})
+Widget customTextFeild({String? title, String? hint, controller,isPass})
 {
   return Column(
 crossAxisAlignment: CrossAxisAlignment.start,
@@ -66,6 +66,8 @@ crossAxisAlignment: CrossAxisAlignment.start,
       title! .text.color(Colors.white).fontFamily(semibold).size(16).make(),
       5.heightBox,
       TextFormField(
+        obscureText: isPass,
+        controller: controller,
         decoration: InputDecoration(
           hintStyle: const TextStyle(
             fontFamily: semibold,
